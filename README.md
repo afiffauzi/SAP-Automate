@@ -1,22 +1,22 @@
 # PyAutoGUI for SAP Automation
 
-The tasks of login into a SAP server, running a certain TCODE, and logging out are all automated by this project. The PyAutoGUI package is used to replicate mouse and keyboard movements.
+The tasks of logging in to a SAP server, running a certain TCODE, and logging out are all automated by this project. The PyAutoGUI package is used to replicate mouse and keyboard movements.
 
 ## Dependencies
 
 - Python 3
-- PyAutoGUI
+- [PyAutoGUI](https://pyautogui.readthedocs.io/en/latest/)
 
 ## How it functions
 
 The script proceeds as follows:
 
-1. Starts the SAP Logon program.
+1. Start the SAP Logon program.
 2. Acquires a SAP server login.
 3. Enters the user's SAP login information.
 4. Types the TCODE "ZRS_SP_PERFORM".
 5. carries out the TCODE.
-6. Closes the SAP Logon application and logs off of the SAP server.
+6. Close the SAP Logon application and log off from the SAP server.
 
 The script reports errors and force-closes the SAP Logon application if there are any during the procedure.
 
@@ -33,7 +33,7 @@ The script uses the following environment variables for the SAP credentials:
 
 ## Usage
 
-To run the script, simply execute the `robot.py` file:
+To run the script, simply execute the `main.py` file:
 
 ```bash
-python robot.py
+python main.py
